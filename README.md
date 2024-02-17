@@ -1,2 +1,2 @@
-# javascript-exercises
-Module Autochecks
+# Javascript Exercises
+
