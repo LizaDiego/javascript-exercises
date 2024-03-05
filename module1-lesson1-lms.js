@@ -1,3 +1,5 @@
+// VARIABLES AND TYPES
+
 // ALGORITHM - a process or set of rules to be followed in calculations or other problem-solving operations, especially by a computer.
 
 // 1. Go find the variable with the identifier b and ask its current value.
@@ -207,7 +209,7 @@ console.log((0.17 + 0.24).toFixed(2)); // 0.41
 
 // MATH CLASS
 
-/ Math.floor(num) returns the smallest integer
+// Math.floor(num) returns the smallest integer
 // less than or equal to the specified one
 console.log(Math.floor(1.7)); // 1
 
