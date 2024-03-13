@@ -1,4 +1,4 @@
-// PASSING ARGUMENTS
+// DESTRUCTURING | PASSING ARGUMENTS
 
 /* ...spread - makes it possible to spread a collection of elements (array, string or object) to the places where a set of single values is expected */
 

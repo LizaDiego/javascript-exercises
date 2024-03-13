@@ -63,9 +63,13 @@ function getRectArea(dimensions = '') {
 console.log(getRectArea('8 11'));
 
 /* Example 4 | Element logging
-Write a function logItems(items) that takes an array and uses a for loop that for each element of the array will print a message to the console in the format <item number> - <item value>. The numbering of elements shoold start with 1.
+Write a function logItems(items) that takes an array and uses a for loop so that 
+for each element of the array will print a message to the console 
+in the format <item number> - <item value>. 
+The numbering of elements should start with 1.
 
-For example, for the first element of the array ['Mango', 'Poly', 'Ajax'] with index 0 will print 1 - Mango and for index 2 will print 3 - Ajax.
+For example, for the first element of the array ['Mango', 'Poly', 'Ajax'] 
+with index 0 will print 1 - Mango and for index 2 will print 3 - Ajax.
 
 Step 1: Start
 Step 2: Define function `logItems` with parameter `items`
@@ -82,8 +86,11 @@ const logItems = function (items = []) {
 logItems(['Mango', 'Poly', 'Ajax']);
 logItems(['🍎', '🍇', '🍑', '🍌', '🍋']);
 
-Example 5 | Contact logging
-Write a function printContactsInfo(names, phones) that prints to the console the name and the user's phone number. The names and phones parameters will be passed strings of names and phone numbers separated by commas. Sequence number of names and phone numbers in the rows indicate a match. Number of names and phones guaranteed to be the same.
+/* Example 5 | Contact logging
+Write a function printContactsInfo(names, phones) that prints to the console the name and the user's phone number. 
+The names and phones parameters will be passed strings of names and phone numbers separated by commas.
+Sequence number of names and phone numbers in the rows indicate a match.
+Number of names and phones guaranteed to be the same.
 
 Step 1: Start
 Step 2: Define function `printContactsInfo` with parameters `names`, `phones`, and `ages`
@@ -92,7 +99,7 @@ Step 4: Split the `phones` string by commas into an array `phonesArr`
 Step 5: Split the `ages` string by commas into an array `yearsArr`
 Step 6: Initialize a for loop that starts from index 0 to the length of `namesArr` array
 For each iteration, print the name, phone, and age of the user in the format "name: <name>; phone: <phone>; age: <age>"
-Step 7: End
+Step 7: End */
 
 function printContactsInfo(...rest) {
   const namesArr = rest[0].split(',');
@@ -100,17 +107,36 @@ function printContactsInfo(...rest) {
   const yearsArr = rest[2].split(',');
 
   for (let i = 0; i < namesArr.length; i++) {
-    console.log(
-      `name: ${namesArr[i]}; phone: ${phonesArr[i]}; age: ${yearsArr[i]}`
+    console.log(`name: ${namesArr[i]}; phone: ${phonesArr[i]}; age: ${yearsArr[i]}`
     );
   }
-}
-
+  
 printContactsInfo(
   'Jacob,William,Solomon,Artemis',
   '89001234567,89001112233,890055566377,890055566300',
   '28,21,18,31'
 );
+
+  // answer
+const names = "Jacob,William,Solomon,Artemis";
+const phones = "89001234567,89001112233,890055566377,890055566300";
+const age = "28,21,18,31";
+
+function printContactsInfo(names, phones, ages) {
+    const namesArr = names.split(",");
+    const phonesArr = phones.split(",");
+    const agesArr = ages.split(",");
+
+    for (let i = 0; i < namesArr.length; i++) {
+        console.log(`name: ${namesArr[i]}; phone: ${phonesArr[i]}; age: ${agesArr[i]}`);
+    }
+}
+
+printContactsInfo(names, phones, age);
+// name: Jacob; phone: 89001234567; age: 28
+// name: William; phone: 89001112233; age: 21
+// name: Solomon; phone: 890055566377; age: 18
+// name: Artemis; phone: 890055566300; age: 31
 
 /* Example 6 | Finding the largest element
 Write a function findLargestNumber(numbers) that looks for the largest number in array. */
@@ -119,8 +145,8 @@ function findLargestNumber(numbers) {
   return Math.max(...numbers);
 }
 
-console.log(findLargestNumber([2, 17, 94, 1, 23, 37])); 94
-console.log(findLargestNumber([49, 4, 7, 83, 12])); 83
+console.log(findLargestNumber([2, 17, 94, 1, 23, 37])); // 94
+console.log(findLargestNumber([49, 4, 7, 83, 12])); // 83
 
 /* Example 7 | Average value
 Write a calAverage() function that takes an arbitrary number of arguments and returns their average. 
