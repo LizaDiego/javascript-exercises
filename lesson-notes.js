@@ -1,4 +1,4 @@
-//Syntax of if-else statement
+// SYNTAX
 
 /*
     if(condition) {
@@ -8,12 +8,12 @@
     }
 */
 
-// function sayHello() {
-// 	console.log("Hello From Function");
-// }
-// sayHello();
+/* function sayHello() {
+	console.log("Hello From Function");
+}
+sayHello();
 
-// console.log("Hello World");
+console.log("Hello World"); */
 
 //GLOBAL SCOPE
 let x = 5;
@@ -23,18 +23,20 @@ if (true) {
 }
 console.log("This is the global scope ", x);
 
-// let color = "blue";
-// if (color === "green") {
-// 	console.log("You may go");
-// } else if (color === "yellow") {
-// 	console.log("You should slow down");
-// } else if (color === "blue") {
-// 	console.log("You should jump");
-// } else {
-// 	console.log("You should stop");
-// }
+let color = "blue";
+if (color === "green") {
+	console.log("You may go");
+} else if (color === "yellow") {
+	console.log("You should slow down");
+} else if (color === "blue") {
+	console.log("You should jump");
+} else {
+	console.log("You should stop");
+}
 
-// color === "green" ? console.log("You may go") : color === "yellow" ? console.log("You should slow down") : color === "blue" ? console.log("You should jump") : console.log("You should stop");
+/* color === "green" ? console.log("You may go") : color === "yellow" ? 
+	console.log("You should slow down") : color === "blue" ?
+	console.log("You should jump") : console.log("You should stop"); */
 
 if (5 > 2) {
 	console.log("say hello");
@@ -42,16 +44,16 @@ if (5 > 2) {
 	console.log("say hi");
 }
 
-// equality operator (==) it only checks if they have the same value
-// strict equality operator (===) it checks the value and checks the data type.
+/* equality operator (==) it only checks if they have the same value
+strict equality operator (===) it checks the value and checks the data type.
 
-// LOGICAL OPERATORS
-// && AND - returns true if both operands returns true otherwise false
-// || OR - returns true as long as one operand is true. returns false if both operands are false
-// ! NOT
+LOGICAL OPERATORS
+&& AND - returns true if both operands returns true otherwise false
+|| OR - returns true as long as one operand is true. returns false if both operands are false
+! NOT
 
-// Can you buy me a chocolate ice cream AND a vanilla ice cream.
-// Can you buy me a chocolate ice cream OR a vanilla ice cream.
+Can you buy me a chocolate ice cream AND a vanilla ice cream.
+Can you buy me a chocolate ice cream OR a vanilla ice cream. */
 
 let isLogin = true;
 let isCustomer = false;
